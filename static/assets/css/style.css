@@ -1,0 +1,126 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin:0;
+    padding:0;
+}
+
+header{
+    text-align: center;
+}
+
+header h1{}
+header h2{
+    font-size: 1.0rem;
+    font-weight: 400;
+    color: #666;
+}
+
+#main{
+    width:100%;
+    padding:0 20px 20px 20px;
+    margin:0 auto;
+}
+
+#main .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+#main .row div{
+    width: 1fr;
+    min-width:200px;
+    margin:0px;
+    padding:20px;
+}
+
+.row h3{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #000;
+}
+.row h4{
+    font-size: 6.0rem;
+    font-weight: 800;
+    color: #666;
+}
+
+.atbat h4{
+    font-size:2rem;
+}
+
+a.switch,a.reset{
+    font-size: larger;
+    font-weight: bold;
+}
+
+a.reset{
+    display:block;
+    height:100%;
+    line-height:100%;
+}
+
+#timer{
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#timer h5{
+    font-size: 5.0rem;
+    font-weight: bold;
+    color: #666;
+    margin:0;padding:0;
+}
+
+#timer a{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background: #007bff;
+    color: #fff;
+    font-weight: bold;
+    font-size:30px;
+    text-decoration: none;
+    border-radius: 5px;
+    border:0;
+    margin:0 5px;
+}
+
+#timer a:hover{
+    background: #0069d9;
+}
+
+div.batting{
+    background:url(../gr/atbat.png) top left no-repeat;
+}
+
+div.fielding{
+    background:url(../gr/glove.png) top right no-repeat;   
+}
+
+a.inc{
+    display: inline-block;
+    width:40%;
+    height:50px;
+    line-height:50px;
+    background: #007bff;
+    color: #fff;
+    font-weight: bold;
+    font-size:30px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a.inc:hover{
+    background: #0069d9;
+}

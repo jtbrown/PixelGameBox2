@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel GameBox</title>
+    <link rel="icon" type="image/x-icon" href="static/assets/gr/favicon.ico">
+    <link rel="stylesheet" href="static/assets/css/bp5.css" type="text/css">
+    <link rel="stylesheet" href="static/assets/css/style.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>Pixel GameBox</h1>
+        <h2>Softball</h2>
+    </header>
+    <div id="main">
+        <div id="timer">
+            <h5 id="time">1:30:00</h5>
+            <p>
+                <a href="#" id="start">&#9658;</a>
+                <a href="#" id="stop">&#9632;</a>
+                <a href="#" id="reset">&#x25CB;</a>
+            </p>
+        </div>
+        <div class="row score">
+            <div class="home batting">
+                <h3>{{ game['home']['name'] }}</h3>
+                <h4>{{ game['home']['score'] }}</h4>
+                <a href="/home/score/1" class="inc">+</a> <a href="/home/score/-1" class="inc">-</a>
+            </div>
+            <div class="away fielding">
+                <h3>{{ game['away']['name'] }}</h3>
+                <h4>{{ game['away']['score'] }}</h4>
+                <a href="/away/score/1" class="inc">+</a> <a href="/away/score/-1" class="inc">-</a>
+            </div>
+        </div>
+        <div class="row info">
+            <div class="outs">
+                <h3>Outs</h3>
+                <h4>{{ game['home']['outs'] }}</h4>
+                <a href="/{{ game['atbat'] }}/outs/1" class="inc">+</a> <a href="/{{ game['atbat'] }}/outs/-1" class="inc">-</a>
+            </div>
+            <div class="inning">
+                <h3>Inning</h3>
+                <h4>{{ game['inning'] }}</h4>
+                <a href="/none/inning/1" class="inc">+</a> <a href="/none/inning/-1" class="inc">-</a>
+            </div>
+        </div>
+        <div class="row info">
+            <div class="atbat">
+                <h3>At Bat</h3>
+                <h4>{{ game['atbat'] }}</h4>
+                <a href="/none/atbat/{{ game['atbat'] }}" class="switch">Switch</a>
+            </div>
+            <div class="reset">
+                <a href="/none/clear/0" class="reset">Reset Game</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="static/assets/js/main.js"></script>
+</body>
+</html>
